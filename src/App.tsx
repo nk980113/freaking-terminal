@@ -1,10 +1,10 @@
 import React from 'react';
 
 import { Box } from 'ink';
-import { useHookedConstants, constants as nonHookedConstants } from '../constants/constants';
-import { StartMenu } from './StartMenu';
+import { useHookedConstants, constants as nonHookedConstants } from './constants/constants';
+import { StartMenu } from './components/StartMenu';
 
-export const Frame: React.FC = () => {
+export const App: React.FC = () => {
     const constants = {
         ...useHookedConstants(),
         ...nonHookedConstants,
