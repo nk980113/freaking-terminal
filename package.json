@@ -1,0 +1,31 @@
+{
+  "name": "freaking-terminal",
+  "version": "0.0.0",
+  "license": "MIT",
+  "bin": {
+    "freaking-terminal": "dist/index.js"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "test": "npm run build && node dist/"
+  },
+  "dependencies": {
+    "ink": "^3.2.0",
+    "meow": "^9.0.0",
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "chalk": "^4.1.2",
+    "eslint-plugin-react": "^7.32.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "ink-testing-library": "^2.1.0"
+  },
+  "description": "A interactive terminal game",
+  "keywords": [
+    "game",
+    "terminal"
+  ],
+  "author": "Nick Tseng"
+}
