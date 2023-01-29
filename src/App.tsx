@@ -2,7 +2,9 @@ import React from 'react';
 
 import { Box } from 'ink';
 import { useHookedConstants, constants as nonHookedConstants } from './constants/constants';
-import { StartMenu } from './components/StartMenu';
+import { Frame } from './components/Frame';
+import { GameStateProvider } from './state';
+
 
 export const App: React.FC = () => {
     const constants = {
@@ -18,6 +20,8 @@ export const App: React.FC = () => {
         minWidth={constants.minWidth}
         minHeight={constants.minHeight}
     >
-        <StartMenu></StartMenu>
+        <GameStateProvider>
+            <Frame />
+        </GameStateProvider>
     </Box>;
 };

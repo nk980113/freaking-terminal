@@ -9,6 +9,11 @@ export function useHookedConstants() {
     };
 }
 
+export enum Scene {
+    StartMenu,
+    AboutPage,
+}
+
 export const constants = {
     minWidth: 40,
     minHeight: 30,
